@@ -1,0 +1,29 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Settings",
+        "required": ["cardHtml"],
+        "properties": {
+            "cardCss": {
+                "title": "CSS",
+                "type": "string",
+                "default": ".card {\n font-weight: bold; \n}"
+            },
+            "cardHtml": {
+                "title": "HTML",
+                "type": "string",
+                "default": "<div class='card'>HTML code here</div>"
+            }
+        }
+    },
+    "form": [
+        {
+            "key": "cardCss",
+            "type": "css"
+        },           
+        {
+            "key": "cardHtml",
+            "type": "html"
+        }    
+    ]
+}

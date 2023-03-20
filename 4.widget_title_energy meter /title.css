@@ -1,0 +1,52 @@
+@media only screen and (min-width: 1200px){
+    .card {
+        font-weight: bold;
+        font-size: 29px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        color: #6E6E6E;
+        margin: auto;
+        
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*border: 1px solid #0F563D;*/
+        /*border-radius: 30px;*/
+        height: 55%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+.card {
+        font-weight: bold;
+        font-size: 29px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        color: #6E6E6E;
+        margin: auto;
+        
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*border: 1px solid #0F563D;*/
+        /*border-radius: 30px;*/
+        height: 55%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+

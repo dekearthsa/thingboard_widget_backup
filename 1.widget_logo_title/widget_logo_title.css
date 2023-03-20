@@ -1,0 +1,69 @@
+.card{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        display: flex;
+        justify-content: start;
+    }
+    
+    img{
+     height: 90px;
+    }
+    .company-name{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 32px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: 'Noto Sans Thai', sans-serif;
+        background: -webkit-linear-gradient(#51E0AD, #0B7D54, #134533);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 860px) {
+    .card {
+        display: flex;
+    }
+    img{
+        height: 50px; 
+    }
+    .company-name{
+        margin-top: 11px;
+        margin-left: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Noto Sans Thai', sans-serif;
+        text-decoration: underline;
+        background: -webkit-linear-gradient(#51E0AD, #0B7D54, #134533);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+@media only screen and (max-width: 859px){
+    .card {
+        display: flex;
+        justify-content: space-around;
+    }
+    img{
+        height: 100px; 
+        margin-top: 5px;
+    }
+    .company-name{
+        margin-top: 45px;
+        margin-left: 30px;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: 'Noto Sans Thai', sans-serif;
+        text-decoration: underline;
+        background: -webkit-linear-gradient(#51E0AD, #0B7D54, #134533);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} 

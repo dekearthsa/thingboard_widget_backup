@@ -1,0 +1,147 @@
+@media only screen and (min-width: 1200px) {
+    .card {
+       width: 100%;
+       height: 100%;
+       box-sizing: border-box;
+       color:#6E6E6E;
+    }
+    
+    .card .content {
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       height: 100%;
+       box-sizing: border-box;
+    }
+    
+    .card .content .column {
+       display: flex;
+       flex-direction: column;    
+       justify-content: space-around;
+       height: 100%;
+    }
+    
+    .card h1 {
+        text-transform: uppercase;
+        color: #999;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 10px;
+        line-height: 32px;
+    }
+    
+    .card .value {
+        font-size: 38px;
+        font-weight: 200;
+    }
+    
+    .card .description {
+        font-size: 20px;
+        color: #999;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 860px) {
+    .card {
+       width: 100%;
+       height: 100%;
+       font-size: 12px;
+       box-sizing: border-box;
+       color:#6E6E6E;
+    }
+    
+    .card .content {
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       height: 100%;
+       box-sizing: border-box;
+    }
+    
+    .card .content .column {
+       display: flex;
+       flex-direction: column;    
+       justify-content: space-around;
+       height: 100%;
+    }
+    
+    .card h1 {
+        text-transform: uppercase;
+        color: #999;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 10px;
+        line-height: 32px;
+    }
+    
+    .card .value {
+        font-weight: 200;
+    }
+    
+    .card .description {
+        color: #999;
+    }
+
+}
+
+@media only screen and (max-width: 859px) {
+    .card {
+       width: 100%;
+       height: 100%;
+       font-size: 20px;
+       box-sizing: border-box;
+       color:#6E6E6E;
+    }
+    
+    .card .content {
+       padding: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       height: 100%;
+       box-sizing: border-box;
+    }
+    
+    .card .content .column {
+       display: flex;
+       flex-direction: column;    
+       justify-content: space-around;
+       height: 100%;
+    }
+    
+    .card h1 {
+        text-transform: uppercase;
+        color: #999;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 10px;
+        line-height: 32px;
+    }
+    
+    .card .value {
+        font-weight: 200;
+    }
+    
+    .card .description {
+        color: #999;
+    }
+    
+    .wrap-value{
+        display: flex;
+        
+    }
+    .wrap-value > span {
+        margin-right: 10px;
+    }
+}
+
+span{
+    font-weight: bold;
+}
