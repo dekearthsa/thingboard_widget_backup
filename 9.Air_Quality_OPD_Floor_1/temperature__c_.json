@@ -1,0 +1,115 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "basic_timeseries",
+    "type": "timeseries",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 8,
+    "sizeY": 5,
+    "config": {
+      "datasources": [
+        {
+          "type": "function",
+          "name": null,
+          "entityAliasId": null,
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "f(x)",
+              "type": "function",
+              "label": "Sin",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.03995221690741313,
+              "funcBody": "return Math.round(1000*Math.sin(time/5000));"
+            }
+          ],
+          "latestDataKeys": null
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "shadowSize": 4,
+        "fontColor": "#545454",
+        "fontSize": 10,
+        "xaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "yaxis": {
+          "showLabels": true,
+          "color": "#545454"
+        },
+        "grid": {
+          "color": "#545454",
+          "tickColor": "#DDDDDD",
+          "verticalLines": true,
+          "horizontalLines": true,
+          "outlineWidth": 1
+        },
+        "legend": {
+          "show": true,
+          "position": "nw",
+          "backgroundColor": "#f0f0f0",
+          "backgroundOpacity": 0.85,
+          "labelBoxBorderColor": "rgba(1, 1, 1, 0.45)"
+        },
+        "decimals": 1,
+        "stack": false,
+        "tooltipIndividual": false
+      },
+      "title": "Temperature (C)",
+      "dropShadow": false,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "enableDataExport": false,
+      "widgetStyle": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": "",
+      "showLegend": false,
+      "legendConfig": {
+        "direction": "column",
+        "position": "bottom",
+        "sortDataKeys": false,
+        "showMin": false,
+        "showMax": false,
+        "showAvg": true,
+        "showTotal": false,
+        "showLatest": false
+      }
+    },
+    "row": 0,
+    "col": 0,
+    "id": "4e83f2fa-fd35-fba2-dcfe-0fbd83d7e7a0"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 6,
+    "sizeY": 3
+  },
+  "originalColumns": 24
+}

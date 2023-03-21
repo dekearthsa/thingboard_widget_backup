@@ -1,0 +1,53 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "html_card",
+    "type": "static",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "cardHtml": "<div class='card'>\n    <div class=\"wrap\">Air Quality : OPD Floor 1</div>\n</div>",
+        "cardCss": "@media only screen and (min-width: 1200px){\n    .card {\n        font-weight: bold;\n        font-size: 29px;\n        height: 100%;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 80%;\n        color: #6E6E6E;\n        margin: auto;\n        \n    }\n    .wrap{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        /*border: 1px solid #0F563D;*/\n        /*border-radius: 30px;*/\n        height: 55%;\n        width: 100%;\n        text-align: center;\n    }\n}\n\n@media only screen and (max-width: 1200px){\n.card {\n        font-weight: bold;\n        font-size: 29px;\n        height: 100%;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 80%;\n        color: #6E6E6E;\n        margin: auto;\n        \n    }\n    .wrap{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        /*border: 1px solid #0F563D;*/\n        /*border-radius: 30px;*/\n        height: 55%;\n        width: 100%;\n        text-align: center;\n    }\n}\n\n\n\n"
+      },
+      "title": "New HTML Card",
+      "dropShadow": true,
+      "enableFullscreen": false,
+      "enableDataExport": true,
+      "widgetStyle": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": "",
+      "showLegend": false
+    },
+    "row": 0,
+    "col": 0,
+    "id": "8e1f55d7-65ca-7d79-2d4d-098144b04347"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 24,
+    "sizeY": 2
+  },
+  "originalColumns": 24
+}

@@ -1,0 +1,86 @@
+{
+  "widget": {
+    "isSystemType": false,
+    "bundleAlias": "clock",
+    "typeAlias": "edited_html_cards",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "function",
+          "name": null,
+          "entityAliasId": null,
+          "filterId": null,
+          "dataKeys": null
+        }
+      ],
+      "timewindow": {
+        "displayValue": "",
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 1,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "quickInterval": "CURRENT_DAY"
+        },
+        "history": {
+          "historyType": 0,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "fixedTimewindow": {
+            "startTimeMs": 1679299734004,
+            "endTimeMs": 1679386134004
+          },
+          "quickInterval": "CURRENT_DAY"
+        },
+        "aggregation": {
+          "type": "AVG",
+          "limit": 25000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "0px",
+      "settings": {
+        "cardCss": "@media only screen and (min-width: 1200px){\n    .card {\n       width: 40%;\n       height: 100%;\n       box-sizing: border-box;\n       margin: auto;\n    }\n    .content {\n       padding: 20px;\n       display: flex;\n       flex-direction: column;\n       justify-content: space-around;\n       height: 100%;\n       box-sizing: border-box;\n    }\n    .title-desc{\n        display: flex;\n        font-weight: bold;\n    }\n    i{\n        margin-right: 10px;\n        color: #3363AD;\n        font-size: 24px;\n    }\n    .label-name{\n        color: #3363AD;\n    }\n    .set-value{\n        margin-top: 15px;\n        width: 130px;\n        display: flex;\n        justify-content: center;\n        height: 35px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n}\n\n@media only screen and (max-width: 1200px) and (min-width: 860px){\n    .card {\n       width: 55%;\n       height: 100%;\n       box-sizing: border-box;\n       margin: auto;\n    }\n    .content {\n       padding: 20px;\n       display: flex;\n       flex-direction: column;\n       justify-content: space-around;\n       height: 100%;\n       box-sizing: border-box;\n    }\n    .title-desc{\n        display: flex;\n        font-weight: bold;\n    }\n    i{\n        margin-right: 10px;\n        color: #3363AD;\n        font-size: 14px;\n    }\n    .label-name{\n        color: #3363AD;\n        font-size: 14px;\n    }\n    .set-value{\n        margin-top:10px;\n        width:110px;\n        display: flex;\n        justify-content: center;\n        height: 30px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        font-size: 12px;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n}\n\n\n@media only screen and (max-width: 859px) {\n    .card {\n       width: 28%;\n       height: 100%;\n       box-sizing: border-box;\n       margin: auto;\n       font-size: 24px;\n    }\n    .content {\n       padding: 20px;\n       display: flex;\n       flex-direction: column;\n       justify-content: space-around;\n       height: 100%;\n       box-sizing: border-box;\n    }\n    .title-desc{\n        display: flex;\n        font-weight: bold;\n    }\n    i{\n        margin-right: 10px;\n        color: #3363AD;\n        \n    }\n    .label-name{\n        color: #3363AD;\n    }\n    .set-value{\n        margin-top:10px;\n        width:180px;\n        display: flex;\n        justify-content: center;\n        height: 30px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n}\n\n\n",
+        "cardHtml": "<div class='card'>\r\n    <div class='content'>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><i class='fas fa-temperature-high' style='font-size:24px'></i></div>\r\n                <div class=\"label-name\">\r\n                    Temperature\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    23.3 C\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><i class='fas fa-tint'></i></div>\r\n                <div class=\"label-name\">\r\n                    Humidity\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    54 % RH\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><i class='fas fa-smog'></i></div>\r\n                <div class=\"label-name\">\r\n                    <div><span>CO</span><sub>2</sub></div>\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    <div>665 PPM</div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><i class='far fa-sun'></i></div>\r\n                <div class=\"label-name\">\r\n                    <div>PM25</div>\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    <div>15 ug/cm<sup>3</sup></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><i class=\"fa fa-sun-o\"></i></div>\r\n                <div class=\"label-name\">\r\n                    <div>PM10</div>\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    <div>21 ug/cm<sup>3</sup></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+      },
+      "title": "New Edited_HTML_cards",
+      "dropShadow": false,
+      "enableFullscreen": false,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {},
+      "enableDataExport": false,
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": ""
+    },
+    "row": 0,
+    "col": 0,
+    "id": "73cf8c07-f084-dc7e-e3b4-640285bda29c"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 6,
+    "sizeY": 15
+  },
+  "originalColumns": 24
+}

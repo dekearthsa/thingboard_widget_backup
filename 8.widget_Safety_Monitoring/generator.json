@@ -1,0 +1,112 @@
+{
+  "widget": {
+    "isSystemType": false,
+    "bundleAlias": "clock",
+    "typeAlias": "attributes_card_edit_ver",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "ce3ab738-6b9c-dac6-e760-82ce7b061d95",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "status",
+              "type": "timeseries",
+              "label": "status",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.7889692756900348,
+              "aggregationType": "NONE",
+              "units": null,
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": true,
+              "postFuncBody": "// เปลี่ยนเป็น value ธรรมดา นะครับถ้า production //\nconst value_demo = 1;\n\nif (value_demo === 0){\n    \n    \n    const  e = `\n    <div style=\"background-color:#DA1B1B;color:white;font-weight:bold;height:50px;display:flex;align-items:center;justify-content:flex-start; animation-name: warning; animation-duration: 1s; animation-iteration-count: infinite;\">\n        <span style=\"height:25px;  width: 25px;background-color: #FFADAD;border-radius: 50%;display: inline-block;margin-right:10px;margin-left:45%\"></span>\n        Alarm\n    </div>\n    \n    <audio id=\"xyz\" src=\"https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3\" preload=\"auto\"></audio>\n    \n    <script>\n        \n        for (i=0; i<30; i++) {\n          setTimeout(function(){\n              document.getElementById('xyz').play();\n          }, i * 800)\n        }\n    </script>\n    `;\n    \n    const createdStyleTag = document.createElement(\"style\");\n    createdStyleTag.textContent = `@keyframes warning {\n     0%, 49% {\n        color: white;\n        opacity: 1;\n        background: rgb(229, 87, 87);\n      }\n      50%, 100% {\n        color: #DA1B1B;\n        opacity: 1;\n        background: rgb(255, 255, 255);\n      }\n    }`;\n    \n    document.body.appendChild(createdStyleTag);\n\n    return e\n}else{\n    const n = `\n    <div style=\"height:50px;display:flex;align-items:center;justify-content:flex-start;\">\n        <span style=\"height:25px;  width: 25px;background-color: #88ccaa;border-radius: 50%;display: inline-block;margin-right:10px;margin-left:45%\"></span>\n        Normal\n    </div>`;\n\n    return n\n}"
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "displayValue": "",
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 1,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "quickInterval": "CURRENT_DAY"
+        },
+        "history": {
+          "historyType": 0,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "fixedTimewindow": {
+            "startTimeMs": 1679299734004,
+            "endTimeMs": 1679386134004
+          },
+          "quickInterval": "CURRENT_DAY"
+        },
+        "aggregation": {
+          "type": "AVG",
+          "limit": 25000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {},
+      "title": "Generator",
+      "useDashboardTimewindow": true,
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "dropShadow": false,
+      "enableFullscreen": false,
+      "enableDataExport": false,
+      "widgetStyle": {},
+      "widgetCss": "",
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "pageSize": 1024,
+      "noDataDisplayMessage": "",
+      "showLegend": false
+    },
+    "row": 0,
+    "col": 0,
+    "id": "77458fd8-552a-9016-bd23-d9ec61bb9e7c"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "test_dry",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "8eb97c40-b646-11ed-9f28-5358e02f9b82",
+            "8e346dc0-b646-11ed-9f28-5358e02f9b82"
+          ]
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 12,
+    "sizeY": 6
+  },
+  "originalColumns": 24
+}

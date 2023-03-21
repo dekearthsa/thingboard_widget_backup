@@ -1,0 +1,86 @@
+{
+  "widget": {
+    "isSystemType": false,
+    "bundleAlias": "clock",
+    "typeAlias": "edited_html_cards",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 3,
+    "config": {
+      "datasources": [
+        {
+          "type": "function",
+          "name": null,
+          "entityAliasId": null,
+          "filterId": null,
+          "dataKeys": null
+        }
+      ],
+      "timewindow": {
+        "displayValue": "",
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 1,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "quickInterval": "CURRENT_DAY"
+        },
+        "history": {
+          "historyType": 0,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "fixedTimewindow": {
+            "startTimeMs": 1679299734004,
+            "endTimeMs": 1679386134004
+          },
+          "quickInterval": "CURRENT_DAY"
+        },
+        "aggregation": {
+          "type": "AVG",
+          "limit": 25000
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "0px",
+      "settings": {
+        "cardCss": "@media only screen and (min-width: 1200px) {\n    .card {\n       width: 50%;\n       height: 100%;\n       margin: auto;\n       box-sizing: border-box;\n    }\n    \n    .content {\n       padding: 20px;\n       display: flex;\n       flex-direction: column;\n       justify-content: space-around;\n       height: 100%;\n    }\n    .title-desc{\n        display: flex;\n        color: #3363AD;\n        font-size: 18px;\n        font-weight: bold;\n        margin-bottom: 10px;\n    }\n    i{\n        color: #3363AD;\n        font-size: 24px;\n        margin-right: 15px;\n    }\n    .set-value{\n        display: flex;\n        justify-content: center;\n        height: 35px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n\n}\n\n@media only screen and (max-width: 1200px) and (min-width: 860px) {\n    .card {\n       width: 100%;\n       height: 100%;\n       box-sizing: border-box;\n    }\n    \n    .card .content {\n       padding: 20px;\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: space-around;\n       height: 100%;\n       box-sizing: border-box;\n    }\n    \n    .card .content .column {\n       display: flex;\n       flex-direction: column;    \n       justify-content: space-around;\n       height: 100%;\n    }\n    \n    i{\n        color: #3363AD;\n        font-size: 14px;\n        margin-right: 10px;\n    }\n    \n    .title-desc{\n        display: flex;\n        color: #3363AD;\n        font-size: 14px;\n        font-weight: bold;\n        margin-bottom: 10px;\n    }\n    \n    .set-value{\n        width:100px;\n        display: flex;\n        justify-content: center;\n        height: 30px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        display: flex;\n        font-size: 14px;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n}\n\n\n@media only screen and (max-width: 859px){\n    .card {\n         padding: 30px;\n       width: 50%;\n       height: 100%;\n       margin: auto;\n       box-sizing: border-box;\n       font-size: 24px;\n    }\n    \n    .content {\n      \n       display: flex;\n       flex-direction: column;\n       justify-content: space-around;\n       height: 100%;\n    }\n    .title-desc{\n        color: #3363AD;\n        display: flex;\n        font-weight: bold;\n        margin-bottom: 10px;\n    }\n    i{\n        color: #3363AD;\n        margin-right: 15px;\n    }\n    .set-value{\n        display: flex;\n        justify-content: center;\n        height: 35px;\n        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;\n        border-radius: 30px;\n    }\n    \n    .value{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        font-weight: bold;\n        color: #6E6E6E;\n    }\n}\n\n\n",
+        "cardHtml": "<div class='card'>\r\n    <div class='content'>\r\n        <div>\r\n            <div class=\"title-desc\">\r\n                <div class=\"icon\"><div class=\"icon\"><i class='fas fa-temperature-high'></i></div></div>\r\n                <div class=\"label-name\">Temperature</div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    23.3 C\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div>\r\n            <div  class=\"title-desc\">\r\n                <div class=\"icon\"><i class='fas fa-tint'></i></div>\r\n                <div class=\"label-name\">\r\n                    Humidity\r\n                </div>\r\n            </div>\r\n            <div class=\"set-value\">\r\n                <div class=\"value\">\r\n                    54 % RH\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+      },
+      "title": "New Edited_HTML_cards",
+      "dropShadow": false,
+      "enableFullscreen": false,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {},
+      "enableDataExport": false,
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": ""
+    },
+    "row": 0,
+    "col": 0,
+    "id": "3f91f27e-7c35-5f1d-a62b-722db00b5aa1"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 6,
+    "sizeY": 6
+  },
+  "originalColumns": 24
+}
